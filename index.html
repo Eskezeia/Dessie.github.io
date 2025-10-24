@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,6 +10,35 @@
 
   <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    /* Profile image styling */
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+    /* Bio text next to image for larger screens */
+    .bio-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media(min-width: 768px) {
+      .bio-container {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+      }
+      .bio-container img {
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -36,14 +65,23 @@
 </nav>
 
 <!-- Main Content -->
-<main class="container mt-5 pt-5 text-center">
-  <h1> Eskezeia Yihunie Dessie </h1>
-  <p>  My research develops computational methods and bioinformatics tools for causal inference in multi-omics data to uncover the molecular architecture of complex diseases, including cancer, asthma, lung diseases, and allergic conditions. By integrating statistical genetics, epigenetics, gene regulatory networks, machine learning, and explainable AI, I map causal pathways from genomic variation through DNA methylation to phenotype—advancing from association to mechanistic understanding of how genetic and epigenetic factors interact with environmental exposure in disease etiology.
-My research addresses a fundamental question: How do trans-mQTLs act through context-specific gene regulatory networks to causally influence phenotype beyond cis-mQTL effects? I am leading development of TRACE (Trans-mQTL Atlas of Causal Epigenetic Regulation), the first framework applying causal inference to trans-mQTL regulatory networks. TRACE integrates genome-wide trans-mQTL discovery, CIMLA-SHAP causal attribution across SNP→CpG→TF→gene regulatory cascades in disease versus control populations, sex-stratified network analysis, and multi-omic validation to address missing heritability in complex diseases.
-My work spans computational and applied data analysis in statistical genetics, epigenetics, genome informatics, gene regulatory network reconstruction, and omics integration. I have developed causal mediation frameworks linking CpG methylation to asthma severity (Clinical Epigenetics, 2024), ensemble disease prediction models incorporating multiethnic admixture (Scientific Reports, 2023; Computers in Biology and Medicine, 2022), and network biomarkers for atopic dermatitis (Journal of Personalized Medicine, 2024).
-My goal is to translate CpG-based causal discoveries into clinically actionable biomarkers through collaborative partnerships with clinical investigators, advancing precision medicine across cancer, respiratory, and allergic diseases.
-    </p>
-  <p><a href="resume.html" class="btn btn-primary">View My CV</a></p>
+<main class="container mt-5 pt-5">
+  <div class="bio-container">
+    <img src="images/profile.jpg" alt="Eskezeia Yihunie Dessie" class="profile-img">
+    <div>
+      <h1>Eskezeia Yihunie Dessie</h1>
+      <p>
+        My research develops computational methods and bioinformatics tools for causal inference in multi-omics data to uncover the molecular architecture of complex diseases, including cancer, asthma, lung diseases, and allergic conditions. By integrating statistical genetics, epigenetics, gene regulatory networks, machine learning, and explainable AI, I map causal pathways from genomic variation through DNA methylation to phenotype—advancing from association to mechanistic understanding of how genetic and epigenetic factors interact with environmental exposure in disease etiology.
+        <br><br>
+        My research addresses a fundamental question: How do trans-mQTLs act through context-specific gene regulatory networks to causally influence phenotype beyond cis-mQTL effects? I am leading development of TRACE (Trans-mQTL Atlas of Causal Epigenetic Regulation), the first framework applying causal inference to trans-mQTL regulatory networks. TRACE integrates genome-wide trans-mQTL discovery, CIMLA-SHAP causal attribution across SNP→CpG→TF→gene regulatory cascades in disease versus control populations, sex-stratified network analysis, and multi-omic validation to address missing heritability in complex diseases.
+        <br><br>
+        My work spans computational and applied data analysis in statistical genetics, epigenetics, genome informatics, gene regulatory network reconstruction, and omics integration. I have developed causal mediation frameworks linking CpG methylation to asthma severity (Clinical Epigenetics, 2024), ensemble disease prediction models incorporating multiethnic admixture (Scientific Reports, 2023; Computers in Biology and Medicine, 2022), and network biomarkers for atopic dermatitis (Journal of Personalized Medicine, 2024).
+        <br><br>
+        My goal is to translate CpG-based causal discoveries into clinically actionable biomarkers through collaborative partnerships with clinical investigators, advancing precision medicine across cancer, respiratory, and allergic diseases.
+      </p>
+      <p><a href="resume.html" class="btn btn-primary">View My CV</a></p>
+    </div>
+  </div>
 </main>
 
 <!-- Footer -->
