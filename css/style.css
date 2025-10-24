@@ -1,0 +1,142 @@
+/* ---------------------------
+General Body & Fonts
+---------------------------- */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa; /* light gray background */
+}
+
+/* ---------------------------
+Navbar
+---------------------------- */
+.navbar {
+    background-color: #ffffff !important; /* white navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: #0d6efd !important; /* bootstrap primary color */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #0d6efd !important;
+}
+
+.nav-link.btn {
+    padding: 0.25rem 0.75rem;
+}
+
+/* ---------------------------
+Main Content
+---------------------------- */
+main h1, main h2, main h3 {
+    color: #0d6efd; /* headers in primary color */
+    margin-bottom: 1rem;
+}
+
+main p {
+    color: #555555;
+    margin-bottom: 1rem;
+}
+
+/* ---------------------------
+Cards (Projects/People)
+---------------------------- */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ---------------------------
+Images
+---------------------------- */
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Circle profile pics */
+.card img.rounded-circle {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* ---------------------------
+Footer
+---------------------------- */
+footer {
+    background-color: #ffffff;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #eaeaea;
+}
+
+/* ---------------------------
+Buttons
+---------------------------- */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+}
+
+/* Outline button for CV */
+.btn-outline-primary {
+    color: #0d6efd;
+    border-color: #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* ---------------------------
+Responsive adjustments
+---------------------------- */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    main {
+        padding: 1rem;
+    }
+}
+
+/* Optional: hover for links in main content */
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0b5ed7;
+}
